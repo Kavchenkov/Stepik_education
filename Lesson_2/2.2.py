@@ -13,3 +13,18 @@ print('****')
 print('*****')
 print('*****')
 print('******')
+
+print('Как тебя зовут?')
+name = input()
+print('Привет,', name)
+
+name = input('Как тебя зовут?')
+print('Привет,', name)
+
+
+name = input()
+print('Привет,', name)
+
+
+print('Привет,', input())
+
