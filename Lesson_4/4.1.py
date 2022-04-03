@@ -192,3 +192,29 @@ if 25 <= age <= 59:
     print('зрелость')
 if 60 <= age:
     print('старость')
+
+a, b, c = int(input()), int(input()), int(input())
+if a >= 0:
+    x = a
+else:
+    x = a * 0
+if b >= 0:
+    y = b
+else:
+    y = b * 0
+if c >= 0:
+    z = c
+else:
+    z = c * 0
+print(x + y + z)
+
+  # альтернативное решение задачи на форуме
+
+a, b, c = int(input()), int(input()), int(input())
+if (a < 0):
+    a = 0
+if (b < 0):
+    b = 0
+if (c < 0):
+    c = 0
+print(a + b + c)
