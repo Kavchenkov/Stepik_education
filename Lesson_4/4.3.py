@@ -133,3 +133,58 @@ elif 60 <= a <= 63:
     print('Первый полусредний вес')
 elif 64 <= a <= 69:
     print('Полусредний вес')
+
+  # 8 задание
+a, b, c = int(input()), int(input()), input()
+if b == 0 and c == '/':
+    print('На ноль делить нельзя!')
+elif c == '+':
+    print(a + b)
+elif c == '-':
+    print(a - b)
+elif c == '*':
+    print(a * b)
+elif c == '/':
+    print(a / b)
+else:
+    print('Неверная операция')
+
+  # 10 задание
+a = int(input())
+if a == 0:
+    print('зеленый')
+elif (a % 2 and 1 <= a <= 10) or (a // 1 and 11 <= a <= 18) or \
+        (a % 2 and 19 <= a <= 28) or (a // 2 and 29 <= a <= 36):
+    print('красный')
+else:
+    print('черный')
+
+a = int(input())
+if a == 0:
+    print('зеленый')
+elif a > 36 or a < 0:
+    print('ошибка ввода')
+elif (a % 2 and 1 <= a <= 10) or (a % 2 == 0 and 11 <= a <= 18) or \
+        (a % 2 and 19 <= a <= 28) or (a % 2 == 0 and 29 <= a <= 36):
+    print('красный')
+else:
+    print('черный')
+
+  # Задание с двумя перцами нахождение пересечения точек у разных отрезков
+a1, b1, a2, b2 = int(input()), int(input()), int(input()), int(input())
+if b1 < a2 or b2 < a1:
+    print('пустое множество')
+elif b1 == a2:
+    print(b1)
+elif a1 == b2:
+    print(a1)
+elif a1 <= a2 < b1 < b2:
+    print(a2, b1)
+elif a2 <= a1 < b2 < b1:
+    print(a1, b2)
+elif a1 < a2 < b2 <= b1:
+    print(a2, b2)
+elif a2 < a1 < b1 <= b2:
+    print(a1, b1)
+elif a1 == a2 and b1 == b2:
+    print(a1, b1)
