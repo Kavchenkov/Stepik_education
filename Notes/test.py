@@ -1,17 +1,9 @@
-a1, b1, a2, b2 = int(input()), int(input()), int(input()), int(input())
-if b1 < a2 or b2 < a1:
-    print('пустое множество')
-elif b1 == a2:
-    print(b1)
-elif a1 == b2:
-    print(a1)
-elif a1 <= a2 < b1 < b2:
-    print(a2, b1)
-elif a2 <= a1 < b2 < b1:
-    print(a1, b2)
-elif a1 < a2 < b2 <= b1:
-    print(a2, b2)
-elif a2 < a1 < b1 <= b2:
-    print(a1, b1)
-elif a1 == a2 and b1 == b2:
-    print(a1, b1)
+x1, y1, x2, y2 = int(input()), int(input()), int(input()), int(input())
+if x2 != x1 and y2 != y1 and (x2 - y2 == x1 - y1 or x2 + y2 == x1 + y1) or x1 == x2 or y1 == y2:
+    print('YES')
+else:
+    print('NO')
+
+
+
+
