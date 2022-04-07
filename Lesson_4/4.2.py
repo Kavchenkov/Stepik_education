@@ -45,7 +45,7 @@ if a==c or b==d:
 else:
     print('NO')
 
-  № альтернативный вариант
+  # № альтернативный вариант
 a= int(input()) ##x
 b= int(input()) ##y
 c= int(input())
@@ -61,7 +61,7 @@ if (1 <= a <= 8 and 1 <= b <= 8) and (-1 <= a - c <= 1) and (-1 <= b - d <= 1):
 else:
     print('NO')
 
-  № альтернативный вариант
+  # № альтернативный вариант
 a = int(input())
 b = int(input())
 c = int(input())

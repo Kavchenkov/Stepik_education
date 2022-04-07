@@ -93,6 +93,9 @@ elif k > n:
     print('YES')
 elif k == n:
     print("Don't know")
+else:
+    print()
+
 
 a, b, c = int(input()), int(input()), int(input())
 if a == b == c:
