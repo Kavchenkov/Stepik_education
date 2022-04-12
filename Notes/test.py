@@ -1,5 +1,5 @@
-s = input()
-if len(s) == 1 and s in 'суббота':
-    print('YES')
-else:
-    print('NO')
+m, p, n = float(input()), float(input()), int(input())
+print('1', m)
+for i in range(n-1):
+    m = m + m * p / 100
+    print(i + 2, m)
