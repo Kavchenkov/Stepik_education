@@ -1,5 +1,3 @@
-m, p, n = float(input()), float(input()), int(input())
-print('1', m)
-for i in range(n-1):
-    m = m + m * p / 100
-    print(i + 2, m)
+m = int(input())
+for i in range(1, 11):
+                print(m, 'x', i, '=', i * m)
